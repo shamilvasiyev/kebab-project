@@ -1,12 +1,11 @@
 import { BCard } from "@/app/interfaces";
-import "./db.css";
 
 const Cardfordb = ({ title, description, img }: BCard) => {
   return (
-    <div className="container db ">
+    <div>
       <img src={img} alt="" />
-      <p className="">{title}</p>
-      <p className="colorred">{description}</p>
+      <p>{title}</p>
+      <p>{description}</p>
     </div>
   );
 };
