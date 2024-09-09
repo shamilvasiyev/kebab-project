@@ -3,8 +3,8 @@ import Cardfordb from "@/Components/Cards";
 import { useState, useEffect } from "react";
 import { BCard } from "./interfaces";
 import axios from "axios";
-const url = `${process.env.VITE_BASE_URL}/menue
-`;
+
+const url = `${process.env.VITE_BASE_URL}/menue`;
 
 const Home = () => {
   const [menue, setMenue] = useState<BCard[] | []>([]);
