@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-import styles from "./style.module.css";
+
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
 
@@ -18,7 +18,6 @@ const Navbar = () => {
       <div>
         <div className="flex justify-center bg-white gap-4  py-2 px-20  border  rounded-full picture">
           <Link
-            c
             className={isActive ? "underline" : ""}
             onMouseOver={handleClick}
             onMouseLeave={handleBlur}
