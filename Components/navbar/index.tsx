@@ -84,7 +84,7 @@ const Navbar = () => {
       <div>
         <div className="flex justify-center bg-white gap-4  py-2 px-20  border  rounded-full picture">
           <div
-            className={activeLink === "about" ? "rounded-full  bg-green" : ""}
+            className={activeLink === "about" ? " bg-green" : ""}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={handleMouseLeave}
           >
@@ -130,3 +130,4 @@ export default Navbar;
 
 // abi sualim:  yuxarda commente aldiqim funksiyada ne sehvdirki mouse ile hover edende hamsinin altindan xett cekir
 // awaqida yazdiqim code blokun aciqi black-boxda mene hazir verdi ama bawa duwe bilmedim yolunu
+// eger commente aldiiqm kod blokunda cuzi sehvlik zarsa ele onu berpa edib onunla ayzmaq istiyerdim cunki onun yolunu basa duwmuwem
