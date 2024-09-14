@@ -14,7 +14,7 @@ const HeaderTop = () => {
         </button>
       </div>
 
-      <h1 className=" text-center text-black text-6xl py-5">
+      <h1 className=" text-center text-black text-6xl py-5 font-bold">
         Taste the Original <span className="text-green">KEBAB</span>
       </h1>
     </div>

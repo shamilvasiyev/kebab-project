@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { BCard } from "./interfaces";
 import axios from "axios";
 
-const url = `${process.env.VITE_BASE_URL}/menue`;
+const url = `${process.env.NEXT_BASE_URL}/menue`;
 
 const Home = () => {
   const [menue, setMenue] = useState<BCard[] | []>([]);
-
+  console.log(menue);
   useEffect(() => {
     axios
       .get(url)

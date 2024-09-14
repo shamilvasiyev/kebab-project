@@ -84,37 +84,35 @@ const Navbar = () => {
       <div>
         <div className="flex justify-center bg-white gap-4  py-2 px-20  border  rounded-full picture">
           <div
-            className={activeLink === "about" ? " bg-green" : ""}
+            className={activeLink === "about" ? " underline" : ""}
             onMouseEnter={() => handleMouseEnter("about")}
             onMouseLeave={handleMouseLeave}
           >
             <Link href="/about">About</Link>
           </div>
           <div
-            className={activeLink === "menue" ? "rounded-full bg-green" : ""}
+            className={activeLink === "menue" ? " underline" : ""}
             onMouseEnter={() => handleMouseEnter("menue")}
             onMouseLeave={handleMouseLeave}
           >
             <Link href="/menue">Menue</Link>
           </div>
           <div
-            className={
-              activeLink === "beverages" ? "rounded-full bg-green" : ""
-            }
+            className={activeLink === "beverages" ? " underline" : ""}
             onMouseEnter={() => handleMouseEnter("beverages")}
             onMouseLeave={handleMouseLeave}
           >
             <Link href="/beverages">Beverages</Link>
           </div>
           <div
-            className={activeLink === "delivery" ? "rounded-full bg-green" : ""}
+            className={activeLink === "delivery" ? "underline " : ""}
             onMouseEnter={() => handleMouseEnter("delivery")}
             onMouseLeave={handleMouseLeave}
           >
             <Link href="/delivery">Delivery</Link>
           </div>
           <div
-            className={activeLink === "contact" ? "rounded-full bg-green" : ""}
+            className={activeLink === "contact" ? "underline " : ""}
             onMouseEnter={() => handleMouseEnter("contact")}
             onMouseLeave={handleMouseLeave}
           >
