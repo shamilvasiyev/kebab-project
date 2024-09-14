@@ -1,14 +1,16 @@
 "use client";
-import Cardfordb from "@/Components/Cards";
+
+import Cardfordb from "@/Components/cards";
 import { useState, useEffect } from "react";
 import { BCard } from "./interfaces";
 import axios from "axios";
 
-const url = `${process.env.NEXT_BASE_URL}/menue`;
+// Server component olsun
+const url = `${process.env.NEXT_PUBLIC_BACKEND_URL}/menue`;
 
 const Home = () => {
   const [menue, setMenue] = useState<BCard[] | []>([]);
-  console.log(menue);
+
   useEffect(() => {
     axios
       .get(url)
